@@ -1,0 +1,37 @@
+.footer {
+    background-color: var(--black);
+    padding: 5rem 0;
+    margin-top: 5rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.navigation a,
+.copyright {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+}

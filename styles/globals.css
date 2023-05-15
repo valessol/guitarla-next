@@ -26,7 +26,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-[class*="contenedor"], 
+[class*="container"], 
 main {
   width: min(95%, 120rem);
   margin: 3rem auto;
@@ -37,4 +37,31 @@ main {
   font-weight: 900;
   color: var(--primary);
   margin: 5rem 0;
+}
+.btn {
+  all: unset;
+  margin-top: 1rem;
+  background-color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 1.4rem;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 300ms;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+}
+.error, .error-link {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.error-link {
+  font-size: 1.8rem;
+  display: block;
+  text-decoration: none;
+  color: var(--primary);
 }
